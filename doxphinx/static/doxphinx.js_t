@@ -1,0 +1,49 @@
+/*
+# doxphinx.js_t - Sphinx javascript for doxphinx projects.
+#
+# Copyright (C) 2018-2019 Angel Linares Zapater
+#
+# Based on the work of the "bizstyle theme" project
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License, version 2, as
+# published by the Free Software Foundation. See the COPYING file.
+#
+# This program is distributed WITHOUT ANY WARRANTY; without even the
+# implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+*/
+
+$(document).ready(function(){
+    if (navigator.userAgent.indexOf('iPhone') > 0 ||
+        navigator.userAgent.indexOf('Android') > 0) {
+        $("div.related ul li:not(.right) a").text("Top");
+    }
+
+    $("div.related:first ul li:not(.right) a").slice(1).each(function(i, item){
+        if (item.text.length > 20) {
+            var tmpstr = item.text
+            $(item).attr("title", tmpstr);
+            $(item).text(tmpstr.substr(0, 5) + "...");
+            alert(i + ":" + item.text + ":" + $(item).attr("title") + ":" + $(item).size());
+        }
+    });
+    $("div.related:last ul li:not(.right) a").slice(1).each(function(i, item){
+        if (item.text.length > 20) {
+            var tmpstr = item.text
+            $(item).attr("title", tmpstr);
+            $(item).text(tmpstr.substr(0, 5) + "...");
+            alert(i + ":" + item.text + ":" + $(item).attr("title") + ":" + $(item).size());
+        }
+    });
+});
+
+$(window).resize(function(){
+    if ($(window).width() <= 776) {
+        $("div.related:first ul li:not(.right):first a").text("Top");
+        $("div.related:last  ul li:not(.right):first a").text("Top");
+    }
+    else {
+        $("div.related:first ul li:not(.right):first a").text("{{ shorttitle|e }}");
+        $("div.related:last  ul li:not(.right):first a").text("{{ shorttitle|e }}");
+    }
+});

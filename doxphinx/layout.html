@@ -1,0 +1,60 @@
+{#
+# layout.html - Sphinx layout template for doxphinx projects
+#
+# Copyright (C) 2018-2019 Angel Linares Zapater
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License, version 2, as
+# published by the Free Software Foundation. See the COPYING file.
+#
+# This program is distributed WITHOUT ANY WARRANTY; without even the
+# implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#}
+
+{% extends "basic/layout.html" %}
+
+{%- block extrahead %}
+  <!-- Set the viewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+{%- endblock %}
+
+{% block header %}
+    <div class="header" role="banner">
+      <div class="logo">
+        {%- if logo %}
+          <a href="{{ pathto(master_doc) }}">
+            <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" />
+          </a>
+        {%- endif %}
+        <a class="logo" href="{{ pathto(master_doc) }}"><bold> {{ project }} </bold></a>
+      </div>
+    </div>
+{% endblock %}
+
+{#--- Remove sidebar logo #}
+{%- block sidebarlogo %}
+{% endblock %}
+
+{#--- Sidebar on the left of the body #}
+{% block sidebar1 %}
+  {{ sidebar() }}
+{% endblock %}
+{% block sidebar2 %}
+{% endblock %}
+
+{%- block footer %}
+    <div class="footer" role="contentinfo">
+    {%- if show_copyright %}
+        {% trans copyright=copyright|e %}
+          &#169; Copyright {{ copyright }}.
+        {% endtrans %}
+        <br />
+    {%- endif %}
+    {%- if show_sphinx %}
+      {% trans sphinx_version=sphinx_version|e %}
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a>
+        and the <a href="https://doxphinx.org/">doxphinx</a> theme.
+      {% endtrans %}
+    {%- endif %}
+    </div>
+{%- endblock %}
