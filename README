@@ -25,9 +25,10 @@ generate a HTML website or a PDF book, both from the same single documentation s
 How to use
 ==========
 In order to use doxphinx, once installed, to document any project you just need
-create a directory for the documentation files. Using the Sphinx tool, initialize
-the directory as a Sphinx project and configure the conf.py file that will be
-created, and you are ready to build the documentation using doxphinx.
+create a directory for the documentation files. Using the Sphinx tool
+``sphinx-quickstart`` initialize the directory as a Sphinx project and configure
+the conf.py file that has been created, and you are ready to build the documentation
+using doxphinx.
 
 At this point you can focus on the actual documentation work for your project.
 Whenever the documentation is ready to be published or updated, use Sphinx to format
@@ -35,8 +36,7 @@ again the HTML website or the PDF book from the documentation source files.
 
 Status
 ======
-The doxphinx project is in DEVELOPMENT status. The internal structure of the theme
-and extensions and the way of distributing releases may still change.
+The doxphinx project is in TESTING status.
 
 More information
 ================

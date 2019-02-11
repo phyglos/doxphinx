@@ -18,7 +18,7 @@ with open("README", "r") as fh:
 
 setuptools.setup(
     name='doxphinx',
-    version='0.3.1',
+    version='1.0.0b1',
     license='GPL version 2',
     description='doxphinx for Sphinx',
     long_description=long_description,
@@ -44,7 +44,7 @@ setuptools.setup(
     install_requires=['sphinx>=1.8.4'],
     keywords='doxphinx, sphinx, phyglos',
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         "Programming Language :: Python :: 3.7",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
         "Operating System :: OS Independent",
