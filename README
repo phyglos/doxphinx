@@ -24,11 +24,19 @@ generate a HTML website or a PDF book, both from the same single documentation s
 
 How to use
 ==========
-In order to use doxphinx, once installed, to document any project you just need
-create a directory for the documentation files. Using the Sphinx tool
-``sphinx-quickstart`` initialize the directory as a Sphinx project and configure
-the conf.py file that has been created, and you are ready to build the documentation
-using doxphinx.
+In order to use doxphinx to document any project, just install it using:
+
+  $ pip install doxphinx
+
+Then create a directory for the documentation files and using the Sphinx tool:
+
+  $ sphinx-quickstart
+
+Initialize the directory as a Sphinx project and configure the conf.py file that
+has been created, and you are ready to build the documentation using doxphinx.
+
+See "The doxphinx Handbook" <https://docs.phyglos.org/doxphinx> to learn how to use
+doxphinx in your documentation project.
 
 At this point you can focus on the actual documentation work for your project.
 Whenever the documentation is ready to be published or updated, use Sphinx to format
