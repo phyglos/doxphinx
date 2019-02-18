@@ -14,13 +14,15 @@
 RELEASE NOTES for doxphinx
 ==========================
 
-This is the release "latest" of the doxphinx theme.
-This is a "DEVELOPMENT" release.
+This is the release "1.0.0" of the doxphinx theme.
+This is a "STABLE" release.
 
 See https://docs.phyglos.org/doxphinx for more information.
 
 
-MAJOR CHANGES in "latest"
+MAJOR CHANGES in "1.0.0"
 =========================
 
-* This is a template file
+* Upgraded requirements for Sphinx 1.8.4
+* Set theme option html_main_color
+
