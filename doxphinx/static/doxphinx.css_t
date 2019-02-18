@@ -20,9 +20,9 @@
 ------------------------------------------------------------------------------*/
 
 div.header {
-    background: {{ theme_maincolor }};
-    border-right: 1px solid {{ theme_maincolor }};
-    border-left: 1px solid {{ theme_maincolor }};
+    background: {{ theme_html_main_color }};
+    border-right: 1px solid {{ theme_html_main_color }};
+    border-left: 1px solid {{ theme_html_main_color }};
 }
 
 div.header a:hover {
@@ -32,7 +32,7 @@ div.header a:hover {
 
 .logo {
     color: white;
-    background: {{ theme_maincolor }};
+    background: {{ theme_html_main_color }};
 }
 
 img.logo {
@@ -56,8 +56,8 @@ body {
     background-color: white;
     color: black;
     padding: 0;
-    border-right: 1px solid {{ theme_maincolor }};
-    border-left: 1px solid {{ theme_maincolor }};
+    border-right: 1px solid {{ theme_html_main_color }};
+    border-left: 1px solid {{ theme_html_main_color }};
 
     margin: 0px 40px 0px 40px;
 }
@@ -94,7 +94,7 @@ div.related {
 }
 
 div.related ul {
-    background-color: {{ theme_maincolor }};
+    background-color: {{ theme_html_main_color }};
     height: 2em;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -150,8 +150,8 @@ div.sphinxsidebar h4 {
     font-size: 0.9em;
     padding: 0.1em 0 0.1em 0.5em;
     color: white;
-    border: 1px solid {{ theme_maincolor }};
-    background-color: {{ theme_maincolor }};
+    border: 1px solid {{ theme_html_main_color }};
+    background-color: {{ theme_html_main_color }};
 }
 
 div.sphinxsidebar h3 a {
@@ -178,7 +178,7 @@ div.sphinxsidebar li {
 }
 
 div.sphinxsidebar input {
-    border: 1px solid {{ theme_maincolor }};
+    border: 1px solid {{ theme_html_main_color }};
 }
 
 /*------------------------------------------------------------------------------
@@ -187,16 +187,16 @@ div.sphinxsidebar input {
 
 div.footer {
     background-color: white;
-    color: {{ theme_maincolor }};
+    color: {{ theme_html_main_color }};
     padding: 3px 8px 3px 0;
     clear: both;
     font-size: 0.8em;
     text-align: right;
-    border-bottom: 1px solid {{ theme_maincolor }};
+    border-bottom: 1px solid {{ theme_html_main_color }};
 }
 
 div.footer a {
-    color: {{ theme_maincolor }};
+    color: {{ theme_html_main_color }};
     text-decoration: underline;
 }
 
@@ -209,12 +209,12 @@ p {
 }
 
 a {
-    color: {{ theme_maincolor }};
+    color: {{ theme_html_main_color }};
     text-decoration: none;
 }
 
 a:hover {
-    color: {{ theme_maincolor }};
+    color: {{ theme_html_main_color }};
     text-decoration: underline;
 }
 
@@ -223,7 +223,7 @@ div.body a {
 }
 
 h1, h2, h3 {
-    color: {{ theme_maincolor }};
+    color: {{ theme_html_main_color }};
 }
 
 h1 {
@@ -235,7 +235,7 @@ h2 {
     margin: 1.3em 0 0.2em 0;
     font-size: 1.35em;
     padding-bottom: .5em;
-    border-bottom: 1px solid {{ theme_maincolor }};
+    border-bottom: 1px solid {{ theme_html_main_color }};
 }
 
 h3 {
