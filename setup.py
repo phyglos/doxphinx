@@ -18,7 +18,7 @@ with open("README", "r") as fh:
 
 setuptools.setup(
     name='doxphinx',
-    version='1.0.0b1',
+    version='devel..',
     license='GPL version 2',
     description='doxphinx for Sphinx',
     long_description=long_description,
