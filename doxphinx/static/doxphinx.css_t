@@ -492,9 +492,9 @@ th {
 ------------------------------------------------------------------------------*/
 
 /* WIDE DESKTOP STYLE */
-@media only screen and (min-width: 1176px) {
+@media only screen and (min-width: 1024px) {
   body {
-      width: 1024px;
+      width: {{ theme_html_page_width }} ;
       margin: 0 100px 0 100px;
   }
 }
