@@ -495,7 +495,10 @@ th {
 @media only screen and (min-width: 1024px) {
   body {
       width: {{ theme_html_page_width }} ;
-      margin: 0 100px 0 100px;
+      margin-top: 0px;
+      margin-left:  {{ theme_html_page_margin }} ;
+      margin-right: {{ theme_html_page_margin }} ;
+      margin-bottom: 0px;
   }
 }
 
