@@ -18,7 +18,7 @@ with open("README", "r") as fh:
 
 setuptools.setup(
     name='doxphinx',
-    version='devel..',
+    version='master.devel.latest',
     license='GPL version 2',
     description='doxphinx for Sphinx',
     long_description=long_description,
@@ -33,21 +33,28 @@ setuptools.setup(
     # packages=setuptools.find_packages(),
     packages=['doxphinx'],
     package_data={
-      'doxphinx': [
-        'theme.conf',
-        '*.html',
-        'static/*.*',
-        'ext/localtoc/*.*',
-      ]
+        'doxphinx': [
+            'theme.conf',
+            '*.html',
+            'static/*.*',
+            'ext/localtoc/*.*',
+        ]
     },
     # include_package_data=True,
     install_requires=['sphinx>=1.8.5'],
     keywords='doxphinx, sphinx, phyglos',
     classifiers=[
-        "Development Status :: 4 - Beta",
-        "Programming Language :: Python :: 3.7",
+        "Development Status :: 5 - Production/Stable",
+        "Framework :: Sphinx :: Extension",
+        "Framework :: Sphinx :: Theme",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Education",
+        "Intended Audience :: Information Technology",
+        "Intended Audience :: Science/Research",
+        "Intended Audience :: System Administrators",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
         "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3.7",
         "Topic :: Documentation",
         "Topic :: Software Development :: Documentation",
      ],
