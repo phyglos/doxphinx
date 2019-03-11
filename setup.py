@@ -13,8 +13,9 @@
 
 import setuptools
 
-with open("README", "r") as fh:
-    long_description = fh.read()
+# Set README file
+long_description = open("README.rst", "r").read()
+long_description_content_type="text/x-rst"
 
 setuptools.setup(
     name='doxphinx',
@@ -22,7 +23,7 @@ setuptools.setup(
     license='GPL version 2',
     description='doxphinx for Sphinx',
     long_description=long_description,
-    long_description_content_type='text/plain',
+    long_description_content_type=long_description_content_type,
     author='Angel Linares Zapater',
     author_email='alz@phyglos.org',
     url="http://doxphinx.org/",
