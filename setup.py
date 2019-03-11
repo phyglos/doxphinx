@@ -41,7 +41,7 @@ setuptools.setup(
       ]
     },
     # include_package_data=True,
-    install_requires=['sphinx>=1.8.4'],
+    install_requires=['sphinx>=1.8.5'],
     keywords='doxphinx, sphinx, phyglos',
     classifiers=[
         "Development Status :: 4 - Beta",
