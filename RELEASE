@@ -11,16 +11,19 @@
 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 #
 
-RELEASE NOTES for doxphinx
-==========================
+RELEASE NOTES
+=============
 
-This is the release "latest" of the doxphinx theme.
-This is a "DEVELOPMENT" release.
+This is the release "1.2.0" of the doxphinx theme.
+This is a "STABLE" release.
 
 See https://docs.phyglos.org/doxphinx for more information.
 
 
-MAJOR CHANGES in "latest"
-=========================
+MAJOR CHANGES
+=============
 
-* This is a template file
+* Set table header color to theme main color
+* Allow the body to use the page width
+* Require Sphinx 1.8.5
+

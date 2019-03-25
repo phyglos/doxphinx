@@ -19,7 +19,7 @@ long_description_content_type="text/x-rst"
 
 setuptools.setup(
     name='doxphinx',
-    version='1.x.z',
+    version='1.2.0',
     license='GPL version 2',
     description='doxphinx for Sphinx',
     long_description=long_description,
