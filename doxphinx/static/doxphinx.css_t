@@ -70,6 +70,7 @@ div.document {
 
 div.body {
     min-width: 280px;
+    max-width: {{ theme_html_page_width }};
     margin: auto;
     padding: 0.5em 20px 20px 20px;
 }
