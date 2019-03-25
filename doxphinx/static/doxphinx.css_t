@@ -485,7 +485,7 @@ th {
     color: white;
     text-align: left;
     padding-right: 5px;
-    background-color: #82A0BE;
+    background-color: {{ theme_html_main_color }};
 }
 
 /*------------------------------------------------------------------------------
