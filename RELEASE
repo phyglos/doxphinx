@@ -11,16 +11,17 @@
 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 #
 
-RELEASE NOTES for doxphinx
-==========================
+RELEASE NOTES
+=============
 
-This is the release "latest" of the doxphinx theme.
-This is a "DEVELOPMENT" release.
+This is the release "1.3.0" of the doxphinx theme.
+This is a "STABLE" release.
 
 See https://docs.phyglos.org/doxphinx for more information.
 
 
-MAJOR CHANGES in "latest"
-=========================
+MAJOR CHANGES
+=============
 
-* This is a template file
+* Added 'superheader', 'subheader', 'superfooter' and 'subfooter' areas in layout.html
+* Added variables in theme.conf to control 'superheader', 'subheader', 'superfooter' and 'subfooter' HTML padding
