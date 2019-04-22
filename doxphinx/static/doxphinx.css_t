@@ -19,6 +19,10 @@
  HEADER
 ------------------------------------------------------------------------------*/
 
+div.superheader {
+    padding: {{ theme_html_superheader_padding }};
+}
+
 div.header {
     background: {{ theme_html_main_color }};
     border-right: 1px solid {{ theme_html_main_color }};
@@ -42,6 +46,10 @@ img.logo {
     vertical-align: middle;
 }
 
+div.subheader {
+    padding: {{ theme_html_subheader_padding }};
+}
+
 /*------------------------------------------------------------------------------
  BODY
 ------------------------------------------------------------------------------*/
@@ -58,7 +66,6 @@ body {
     padding: 0;
     border-right: 1px solid {{ theme_html_main_color }};
     border-left: 1px solid {{ theme_html_main_color }};
-
     margin: 0px 40px 0px 40px;
 }
 
@@ -186,6 +193,10 @@ div.sphinxsidebar input {
  FOOTER
 ------------------------------------------------------------------------------*/
 
+div.superfooter {
+    padding: {{ theme_html_superfooter_padding }};
+}
+
 div.footer {
     background-color: white;
     color: {{ theme_html_main_color }};
@@ -199,6 +210,10 @@ div.footer {
 div.footer a {
     color: {{ theme_html_main_color }};
     text-decoration: underline;
+}
+
+div.subfooter {
+    padding: {{ theme_html_subfooter_padding }};
 }
 
 /*------------------------------------------------------------------------------
