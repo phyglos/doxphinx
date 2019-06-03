@@ -39,6 +39,13 @@
     </div>
 {% endblock %}
 
+{%- block rootrellink %}
+    <li class="nav-item nav-item-0">
+        <a href="{{ pathto(master_doc) }}">{{ project }} {{ release }}</a>
+        {{ reldelim1 }}
+    </li>
+{%- endblock %}
+
 {#--- Remove sidebar logo #}
 {%- block sidebarlogo %}
 {% endblock %}
