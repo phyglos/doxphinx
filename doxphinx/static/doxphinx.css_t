@@ -214,6 +214,7 @@ div.footer a {
 
 div.subfooter {
     padding: {{ theme_html_subfooter_padding }};
+    border-bottom: 1px solid {{ theme_html_main_color }};
 }
 
 /*------------------------------------------------------------------------------
