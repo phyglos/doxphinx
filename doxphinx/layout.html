@@ -24,14 +24,29 @@
         {%- endblock %}
     </div>
     <div class="header" role="banner">
-      <div class="logo">
-        {%- if logo %}
-          <a href="{{ pathto(master_doc) }}">
-            <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" />
-          </a>
-        {%- endif %}
-        <a class="logo" href="{{ pathto(master_doc) }}"><bold> {{ project }} </bold></a>
-      </div>
+      <table>
+        <tr>
+          <td>
+              {%- if logo %}
+                <a href="{{ pathto(master_doc) }}">
+                  <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" />
+                </a>
+              {%- endif %}
+          </td>
+          <td>
+            <div>
+              <a class="header_title" href="{{ pathto(master_doc) }}">
+                <bold>
+                  {%- if html_header_title %} {{ html_header_title }}
+                  {%- else %} {{ project}}
+                  {%- endif %}
+                </bold>
+              </a>
+              <p class="header_subtitle"> {{ html_header_subtitle }} </p>
+            </div>
+          </td>
+        </tr>
+      </table>
     </div>
     <div class="subheader">
         {%- block subheader %}
