@@ -40,9 +40,9 @@ div.header a:hover {
 }
 
 img.logo {
-    height: 50px;
-    width: 50px;
-    margin: 2px 2px 2px 2px;
+    height: {{ theme_html_logo_height }};
+    width: {{ theme_html_logo_width }};
+    margin: {{ theme_html_logo_margin }};
     vertical-align: middle;
 }
 
