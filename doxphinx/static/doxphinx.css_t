@@ -92,7 +92,6 @@ body {
     padding: 0;
     border-right: 1px solid {{ theme_html_main_color }};
     border-left: 1px solid {{ theme_html_main_color }};
-    margin: 0px 40px 0px 40px;
 }
 
 div.document {
@@ -534,8 +533,8 @@ th {
  DEVICE LAYOUTS
 ------------------------------------------------------------------------------*/
 
-/* WIDE DESKTOP STYLE */
-@media only screen and (min-width: 1024px) {
+/* Wide Desktop */
+@media only screen and (min-width: 1281px) {
   body {
       width: {{ theme_html_page_width }} ;
       margin-top: 0px;
@@ -545,33 +544,58 @@ th {
   }
 }
 
-/* TABLET STYLE */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* Desktop */
+@media only screen and (min-width: 1025px) and (max-width: 1281px) {
   body {
-      width: 800px;
-      margin: 0 40px 0 40px;
+      width: {{ theme_html_page_width }} ;
+      margin-top: 0px;
+      margin-left:  {{ theme_html_page_margin }} ;
+      margin-right: {{ theme_html_page_margin }} ;
+      margin-bottom: 0px;
   }
 }
 
-/* MOBILE LAYOUT (PORTRAIT/320px) */
+/* Tablet (portrait) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+      margin: 0 auto;
+  }
+}
+
+/* Tablet (landscape) */
+@media only screen and (orientation: landscape)
+  and (min-width: 768px) and (max-width: 1024px) {
+  body {
+      margin: 0 auto;
+  }
+}
+
+/* Mobile (portrait) */
 @media only screen and (max-width: 767px) {
   body {
-      margin: 0;
-  }
-  div.bodywrapper {
-      margin: 0;
-      width: 100%;
-      border: none;
+      margin: 0 auto;
   }
   div.sphinxsidebar {
       display: none;
   }
+  div.bodywrapper {
+      margin: 0;
+      border: none;
+  }
 }
 
-/* MOBILE LAYOUT (LANDSCAPE/480px) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+/* Mobile (landscape) */
+@media only screen and (orientation: landscape)
+  and (max-width: 767px) {
   body {
-      margin: 0 20px 0 20px;
+      margin: 0 auto;
+  }
+  div.sphinxsidebar {
+      display: none;
+  }
+  div.bodywrapper {
+      margin: 0;
+      border: none;
   }
 }
 
