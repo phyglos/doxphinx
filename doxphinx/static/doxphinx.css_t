@@ -30,7 +30,7 @@ div.header {
     border-right: 1px solid {{ theme_html_main_color }};
     border-left: 1px solid {{ theme_html_main_color }};
     background: {{ theme_html_main_color }};
-    color: white;
+    color: {{ theme_html_header_color }};
 }
 
 .logo {
@@ -46,11 +46,13 @@ img.logo {
 
 .header_title {
     font-size: {{ theme_html_header_title_font_size }};
+    color:     {{ theme_html_header_title_font_color }};
 }
 
 .header_subtitle {
     margin: 0;
     font-size: {{ theme_html_header_subtitle_font_size }};
+    color:     {{ theme_html_header_subtitle_font_color }};
 }
 
 div.header table {
