@@ -1,7 +1,7 @@
 /*
 # doxphinx.css_t - CCS file for the doxphinx theme
 #
-# Copyright (C) 2018-2019 Angel Linares Zapater
+# Copyright (C) 2018-2023 Angel Linares Zapater
 #
 # Based on the work of the "bizstyle theme" project
 #
@@ -491,6 +491,30 @@ p.versionchanged span.versionmodified {
     margin-right: 0.2em;
     padding: 0.1em;
     background-color: #DCE6A0;
+}
+
+nav.contents,
+aside.topic,
+div.admonition, div.topic, blockquote {
+    clear: none;
+}
+
+div.sidebar::after,
+aside.sidebar::after,
+nav.contents::after,
+aside.topic::after,
+div.topic::after,
+div.admonition::after,
+blockquote::after {
+    display: block;
+    content: '';
+    clear: none;
+}
+
+/* -- code styles ---------------------------------------------------------- */
+
+pre, div[class*="highlight-"] {
+    clear: none;
 }
 
 /* -- table styles ---------------------------------------------------------- */
