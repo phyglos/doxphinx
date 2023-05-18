@@ -1,7 +1,7 @@
 #
 # setup.py - Package initialization
 #
-# Copyright (C) 2018-2019 Angel Linares Zapater
+# Copyright (C) 2018-2023 Angel Linares Zapater
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License, version 2, as
@@ -42,7 +42,7 @@ setuptools.setup(
         ]
     },
     # include_package_data=True,
-    install_requires=['sphinx>=1.8.5'],
+    install_requires=['sphinx>=7.0.0'],
     keywords='doxphinx, sphinx, phyglos',
     classifiers=[
         "Development Status :: 5 - Production/Stable",
