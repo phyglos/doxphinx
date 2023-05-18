@@ -1,7 +1,7 @@
 #
 # RELEASE - Release notes for doxphinx
 #
-# Copyright (C) 2018-2019 Angel Linares Zapater
+# Copyright (C) 2018-2023 Angel Linares Zapater
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License, version 2, as
@@ -14,13 +14,14 @@
 RELEASE NOTES for doxphinx
 ==========================
 
-This is the release "latest" of the doxphinx theme.
-This is a "DEVELOPMENT" release.
+This is the release "1.7.0" of the doxphinx theme.
+This is a "STABLE" release.
 
 See https://docs.phyglos.org/doxphinx for more information.
 
 
-MAJOR CHANGES in "latest"
-=========================
+MAJOR CHANGES
+=============
 
-* This is a template file
+* Require Sphinx 7.0.0
+* Fixed issues with left sidebar clearing
