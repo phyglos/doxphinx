@@ -3,6 +3,9 @@
 
 .venv
 venv
+
+.vscode
+
 build
 dist
 doxphinx.egg-info
